@@ -1,43 +1,27 @@
-# 🕸️ MESH v5.0 — Core Framework
+# agent-mesh-core
 
-> **Harness Engineering & AI Agent Governance Platform**
+> Core framework for autonomous multi-agent orchestration in distributed mesh architectures.
 
-O **MESH v5.0** é um arcabouço arquitetural projetado para governar, orquestrar e validar a execução de Agentes Autônomos de Inteligência Artificial. Ele opera sob o paradigma de **Harness Engineering**, onde o foco deixa de ser a geração bruta de texto/código e passa a ser a **previsibilidade, determinismo, segurança e conformidade constitucional** dos fluxos operacionais.
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Status: Active](https://img.shields.io/badge/Status-Active-success.svg)]()
 
----
+## 🧠 Overview
 
-## 🏛️ Pilares da Arquitetura
+`agent-mesh-core` is an advanced framework designed to orchestrate autonomous multi-agent systems within a decentralized mesh architecture. It provides the foundational infrastructure required for independent AI agents to communicate, synchronize tasks, and collaborate securely across distributed nodes.
 
-1. **Constituição Imutável (Invariants Gate):** Conjunto de regras inegociáveis codificadas em nível de sistema. Nenhuma ação de agente é executada sem passar pela validação constitucional.
-2. **Governança Auditável (Proposal & Audit Gates):** Transforma qualquer intenção de alteração do sistema em uma proposta auditável antes de sua aplicação efetiva.
-3. **Orquestração de Agentes (Master Agent Framework):** Coordenação hierárquica e especializada de agentes autônomos com responsabilidades isoladas.
-4. **Event Store Imutável (Append-Only Audit Log):** Rastreabilidade total e reprodução de estados a partir do histórico absoluto de eventos do sistema.
-5. **Simulação e Testes Adversariais (Monte Carlo & Red Teaming):** Validação contínua da resiliência do sistema contra comportamentos imprevistos ou ataques de injeção.
+## 🏗️ Architecture
 
----
+The framework is built around a modular, decentralized mesh topology:
+* **Decentralized Coordination:** Eliminates single points of failure through peer-to-peer agent communication.
+* **Autonomous Orchestration:** Dynamic task allocation and execution managed by specialized agent roles.
+* **Modular Extensibility:** Clean separation of concerns allowing seamless integration of new custom skills and tools.
 
-## 📂 Estrutura do Repositório
+## 📂 Project Structure
 
 ```text
-mesh-v5-core/
-├── .github/
-│   └── workflows/          # Pipelines de CI/CD para automação de testes
-├── docs/                   # Documentação arquitetural, segurança e governança
-│   ├── architecture/
-│   ├── constitution/
-│   ├── governance/
-│   └── security/
-├── src/
-│   └── mesh_v5/            # Código-fonte principal do Framework MESH
-│       ├── agents/         # Definição e especialização de agentes
-│       ├── bridge/         # Conectores e adaptadores de integração
-│       ├── constitution/   # Regras constitucionais e verificadores imutáveis
-│       ├── event_store/    # Log de eventos auditável imutável
-│       ├── governance/     # Propostas, aprovações e controle de estados
-│       ├── guards/         # Validadores de segurança e limites operacionais
-│       └── orchestrator/   # Motor central de orquestração do MESH
-└── tests/                  # Suíte rigorosa de testes de qualidade
-    ├── adversarial/        # Testes de estresse e red teaming
-    ├── integration/        # Testes de integração de componentes
-    ├── monte_carlo/        # Simulações de cenários probabilísticos
-    └── unit/               # Testes unitários de invariantes e componentes
+agent-mesh-core/
+├── docs/          # Architectural documentation and guides
+├── src/           # Core source code (Orchestrator and agents)
+├── tests/         # Comprehensive integration and unit tests
+└── run_all_tests.py # Global test suite runner
