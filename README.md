@@ -25,3 +25,4 @@ agent-mesh-core/
 ├── src/           # Core source code (Orchestrator and agents)
 ├── tests/         # Comprehensive integration and unit tests
 └── run_all_tests.py # Global test suite runner
+python run_all_tests.py
