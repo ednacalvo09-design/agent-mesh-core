@@ -1,0 +1,12 @@
+{"timestamp": 1786944124.0013282, "event_type": "GOVERNANCE_PROPOSAL_EVALUATED", "payload": {"agent_id": "agent_proposer_01", "action": "deletar usuarios", "allowed": false, "violations": ["palavra proibida: deletar"]}}
+{"timestamp": 1786944124.002847, "event_type": "GOVERNANCE_PROPOSAL_EVALUATED", "payload": {"agent_id": "agent_proposer_01", "action": "listar usuarios", "allowed": true, "violations": []}}
+{"timestamp": 1786944278.830007, "event_type": "GOVERNANCE_PROPOSAL_EVALUATED", "payload": {"agent_id": "agent_proposer_01", "action": "deletar usuarios", "allowed": false, "violations": ["palavra proibida: deletar"]}}
+{"timestamp": 1786944278.832181, "event_type": "GOVERNANCE_PROPOSAL_EVALUATED", "payload": {"agent_id": "agent_proposer_01", "action": "listar usuarios", "allowed": true, "violations": []}}
+{"timestamp": 1786944379.677707, "event_type": "GOVERNANCE_PROPOSAL_EVALUATED", "payload": {"agent_id": "agent_proposer_01", "action": "deletar usuarios", "allowed": false, "violations": ["palavra proibida: deletar"]}}
+{"timestamp": 1786944379.67937, "event_type": "GOVERNANCE_PROPOSAL_EVALUATED", "payload": {"agent_id": "agent_proposer_01", "action": "listar usuarios", "allowed": true, "violations": []}}
+{"timestamp": 1786944461.282969, "event_type": "GOVERNANCE_PROPOSAL_EVALUATED", "payload": {"agent_id": "agent_proposer_01", "action": "deletar usuarios", "allowed": false, "violations": ["palavra proibida: deletar"]}}
+{"timestamp": 1786944461.2850251, "event_type": "GOVERNANCE_PROPOSAL_EVALUATED", "payload": {"agent_id": "agent_proposer_01", "action": "listar usuarios", "allowed": true, "violations": []}}
+{"timestamp": 1786944558.0913548, "event_type": "GOVERNANCE_PROPOSAL_EVALUATED", "payload": {"agent_id": "agent_proposer_01", "action": "deletar usuarios", "allowed": false, "violations": ["palavra proibida: deletar"]}}
+{"timestamp": 1786944558.093032, "event_type": "GOVERNANCE_PROPOSAL_EVALUATED", "payload": {"agent_id": "agent_proposer_01", "action": "listar usuarios", "allowed": true, "violations": []}}
+{"timestamp": 1786944729.816742, "event_type": "GOVERNANCE_PROPOSAL_EVALUATED", "payload": {"agent_id": "agent_proposer_01", "action": "deletar usuarios", "allowed": false, "violations": ["palavra proibida: deletar"]}}
+{"timestamp": 1786944729.819133, "event_type": "GOVERNANCE_PROPOSAL_EVALUATED", "payload": {"agent_id": "agent_proposer_01", "action": "listar usuarios", "allowed": true, "violations": []}}
