@@ -1,9 +1,4 @@
 
-from mesh.core.constitution import Constitution
-from mesh.core.event_store import EventStore
-from mesh.core.guardian import Guardian
-from mesh.v5.agents.proposer import ProposerAgent
-
 def main():
     print("🚀 Iniciando o Ecossistema MESH v5.0 (Zero-Trust)...")
 
