@@ -10,3 +10,5 @@
 {"timestamp": 1786944558.093032, "event_type": "GOVERNANCE_PROPOSAL_EVALUATED", "payload": {"agent_id": "agent_proposer_01", "action": "listar usuarios", "allowed": true, "violations": []}}
 {"timestamp": 1786944729.816742, "event_type": "GOVERNANCE_PROPOSAL_EVALUATED", "payload": {"agent_id": "agent_proposer_01", "action": "deletar usuarios", "allowed": false, "violations": ["palavra proibida: deletar"]}}
 {"timestamp": 1786944729.819133, "event_type": "GOVERNANCE_PROPOSAL_EVALUATED", "payload": {"agent_id": "agent_proposer_01", "action": "listar usuarios", "allowed": true, "violations": []}}
+{"timestamp": 1786962150.572551, "event_type": "GOVERNANCE_PROPOSAL_EVALUATED", "payload": {"agent_id": "agent_proposer_01", "action": "deletar usuarios", "allowed": false, "violations": ["palavra proibida: deletar"]}}
+{"timestamp": 1786962150.5744781, "event_type": "GOVERNANCE_PROPOSAL_EVALUATED", "payload": {"agent_id": "agent_proposer_01", "action": "listar usuarios", "allowed": true, "violations": []}}

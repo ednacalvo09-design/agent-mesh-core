@@ -5,10 +5,13 @@ from pathlib import Path
 # Adiciona src/ ao PATH
 sys.path.append(str(Path(__file__).resolve().parent / "src"))
 
-from tests.unit.test_constitution import test_constitution
-from tests.unit.test_event_store import test_event_store
-from tests.unit.test_governance import test_governance_flow
-from tests.unit.test_orchestrator import test_orchestrator
+from src.mesh.tests.unit.test_constitution import test_constitution
+from src.mesh.tests.unit.test_event_store import test_event_store
+from src.mesh.tests.unit.test_governance import test_governance
+from src.mesh.tests.unit.test_orchestrator import test_orchestrator
+
+
+
 
 def run_suite():
     print("=" * 60)
