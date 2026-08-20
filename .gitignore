@@ -18,3 +18,8 @@ secrets.json
 .idea/
 .DS_Store
 events_log.jsonl
+.venv/
+__pycache__/
+*.jsonl
+destruir
+listar
