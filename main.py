@@ -1,37 +1,28 @@
+from mesh.v5.constitution.verifier import ConstitutionVerifier
+from mesh.v5.governance.engine import GovernanceEngine
+from mesh.v5.orchestrator.mesh import MeshOrchestrator
 
 def main():
     print("🚀 Iniciando o Ecossistema MESH v5.0 (Zero-Trust)...")
+    print("Constituição v5.0 carregada")
+    print("Guardian inicializado\n")
 
-    # 1. Inicializa o Núcleo
-    constitution = Constitution(version="v5.0")
-    event_store = EventStore()
-    guardian = Guardian(constitution=constitution, event_store=event_store)
+    orchestrator = MeshOrchestrator()
 
-    # 2. Inicializa o Agente Proponente
-    proposer = ProposerAgent(agent_id="agent_proposer_01")
+    print("--- Teste 1: Ação Válida ---")
+    print("🤖 [agent_proposer_01] Gerando proposta...")
+    valid_task = {"trace_id": "trc_main_001", "agent": "agent_proposer_01", "payload": "listar usuarios"}
+    res1 = orchestrator.dispatch(valid_task)
+    print(f"[GUARDIAN] agent_proposer_01 -> listar usuarios")
+    print(f"[APROVADO] listar usuarios\n" if res1["executed"] else f"[BLOQUEADO] {res1['reason']}\n")
 
-    # 3. Simula uma ação válida
-    print("\n--- Teste 1: Ação Válida ---")
-    prop_ok = proposer.propose_action("analisar dados de telemetria")
-    guardian.evaluate_and_execute(
-        agent_id=prop_ok["agent_id"],
-        action=prop_ok["action"],
-        input_data=prop_ok["input_data"],
-        output_data=prop_ok["output_data"]
-    )
-
-    # 4. Simula uma ação que viola a constituição (contém "destruir")
-    print("\n--- Teste 2: Ação Inválida/Bloqueada ---")
-    prop_bad = proposer.propose_action("destruir banco de dados principal")
-    guardian.evaluate_and_execute(
-        agent_id=prop_bad["agent_id"],
-        action=prop_bad["action"],
-        input_data=prop_bad["input_data"],
-        output_data=prop_bad["output_data"]
-    )
-
+    print("--- Teste 2: Ação Inválida/Bloqueada ---")
+    print("🤖 [agent_proposer_01] Gerando proposta...")
+    invalid_task = {"trace_id": "trc_main_002", "agent": "agent_proposer_01", "payload": "destruir banco de dados principal"}
+    res2 = orchestrator.dispatch(invalid_task)
+    print(f"[GUARDIAN] agent_proposer_01 -> destruir banco de dados principal")
+    print(f"[BLOQUEADO pela Constituição] {res2.get('violations')}" if not res2["executed"] else f"[APROVADO] {invalid_task['payload']}")
     print("\n✨ Execução do ecossistema finalizada com sucesso!")
 
 if __name__ == "__main__":
     main()
-    
