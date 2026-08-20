@@ -16,3 +16,5 @@ dist/
 secrets.json
 .vscode/
 .idea/
+.DS_Store
+events_log.jsonl
