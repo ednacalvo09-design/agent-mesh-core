@@ -1,3 +1,6 @@
+[Release: v5.0](https://img.shields.io/badge/release-v5.0%20Latest-brightgreen?style=for-the-badge)](https://github.com/ednacalvo09-design/mesh-constitutional-zero-trust/releases/tag/v5.0)
+[![Tests](https://img.shields.io/badge/tests-4%20passed%20in%200.11s-brightgreen)](https://github.com/ednacalvo09-design/mesh-constitutional-zero-trust/releases/tag/v5.0)
+[![Zero-Trust](https://img.shields.io/badge/Zero--Trust-Harness%20Engineering-blue?style=for-the-badge)](#)
 
 # 🕸️ MESH v5.0 — Core Framework
 
